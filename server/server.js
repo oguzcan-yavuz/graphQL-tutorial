@@ -5,6 +5,7 @@ const logger = require('morgan')
 const mongoose = require('mongoose')
 const schema = require('./schema/schema.js')
 const MONGO_URI = process.env.MONGO_URI
+const PORT = process.env.PORT || 4000
 
 const app = express()
 
@@ -21,6 +22,6 @@ app.use('/graphql', graphqlHTTP({
 
 app.use(logger('dev'))
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log('Server is listening on port 4000')
 })
