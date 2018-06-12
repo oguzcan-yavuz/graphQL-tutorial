@@ -7,4 +7,5 @@
 - `args` field in `GraphQLObjectType` determines the arguments when client
 asks for a schema.
 
-- 
+- The reason of wrapping schema fields with a function call is;
+to make sure each schema is defined so we are using callbacks to ensure it
