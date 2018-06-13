@@ -7,7 +7,8 @@
 - `args` field in `GraphQLObjectType` determines the arguments when client
 asks for a schema.
 
-- The reason of wrapping schema fields with a function is;
-to make sure each schema is defined so we are using callbacks to ensure it.
+- The reason of wrapping schema fields with a function is
+to make sure each schema is defined so we are using callbacks 
+to ensure it.
 
 - Keep your queries at a separate file and use query variables.

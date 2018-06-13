@@ -21,11 +21,11 @@ app.use(cors())
 
 app.use('/graphql', graphqlHTTP({
   schema,
-  graphiql: true
+  graphiql: false
 }))
 
 app.use(logger('dev'))
 
 app.listen(PORT, () => {
-  console.log('Server is listening on port 4000')
+  console.log('Server is listening on port ' + PORT)
 })
